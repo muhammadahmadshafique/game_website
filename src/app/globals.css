@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+.bgimage{
+  background-image: url("../../public/Left Wing.svg");
+  /* height: 100vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bgright{
+  background-image: url("../../public/right.svg");
+  /* height: 100vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bigbg{
+  background-image: url("../../public/Background svg.svg");
+  /* height: 100vh; */
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+.bgcard{
+  background-image: url("../../public/cardbg.svg");
+  height: 232px;
+  width: 182px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (max-width: 1376px) {
+  /* Styles to apply when width is less than 1377px */
+  .disapper {
+    display: none;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .widd{
+    flex-basis: 100% !important;
+  }
 }
