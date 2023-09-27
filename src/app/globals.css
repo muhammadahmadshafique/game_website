@@ -7,6 +7,7 @@
 .bgimage{
   background-image: url("../../public/Left Wing.svg");
   /* height: 100vh; */
+  height: max-content;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -15,12 +16,17 @@
   /* height: 100vh; */
   background-size: cover;
   background-repeat: no-repeat;
+  height: max-content;
 }
 .bigbg{
   background-image: url("../../public/Background svg.svg");
-  /* height: 100vh; */
+  height: max-content;
   width: 100vw;
   background-repeat: no-repeat;
+}
+.bigbg1{
+  background-image: url("../../public/secbg.svg");
+
 }
 .bgcard{
   background-image: url("../../public/cardbg.svg");
@@ -30,12 +36,25 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1376px) {
+.boxx{
+  background-image: url("../../public/seccard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1276px) {
   /* Styles to apply when width is less than 1377px */
   .disapper {
     display: none;
   }
   .widd{
     flex-basis: 100% !important;
+  }
+  .bigbg{
+  
+    background-repeat: repeat;
+  }
+  .show{
+    display: flex;
   }
 }
